@@ -1,7 +1,12 @@
 # created by virtualenv automatically
 
 /scans
+
 /Lib
+
+/Lib/site-packages
+
 /Scripts
+
 /pyvenv.cfg
 *.cfg
