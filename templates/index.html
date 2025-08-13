@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SafeSnoop</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="main-container">
+    <h1 class="title-header">👋 WELCOME to <span class="highlight">SafeSnOOp</span></h1>
+
+    <div class="options-panel">
+      <button onclick="scanNetworks()">📡 Scan Now</button>
+      <button onclick="showEducation()">📘 Education Mode</button>
+      <button onclick="showDashboard()">📊 Dashboard</button>
+      <button onclick="viewHistory()">📜 View History</button>
+    </div>
+
+    <div id="output" class="output-box"></div>
+    <canvas id="riskChart" style="display:none; max-width: 600px; margin-top: 30px;"></canvas>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+
+</html>
